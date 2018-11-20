@@ -1,0 +1,25 @@
+<html>
+    <head>
+        
+        
+    </head>
+    <link rel="stylesheet" href="./index.css">
+    
+    
+    <body>
+        <!-- libraries -->
+        <script async src="./opencv.js" onload="libReady();" type="text/javascript"></script>
+        <script type="text/javascript" onload="libReady();" src="./index.js"></script>
+        <script type="text/javascript" onload="libReady();" src="./js-aruco/src/aruco.js"></script>
+        <script type="text/javascript" onload="libReady();" src="./js-aruco/src/cv.js"></script>
+       <!-- ---------- -->
+        <!-- the loading gif class -->
+        <div class="modal"></div>
+        <!-- --------------------- -->
+        <center>
+            <video id="video" autoplay="true" style="display:none"></video>
+            <canvas id="canvas" width="420px" height="640px" style="display:none;"></canvas>
+        </center>
+    </body>
+    
+</html>
