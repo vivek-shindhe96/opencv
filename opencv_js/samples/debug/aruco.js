@@ -171,10 +171,10 @@ AR.Detector.prototype.getMarker = function(imageSrc, candidate){
     }
   }
 
-  for (i = 0; i < 5; ++ i){
+  for (i = 0; i < 7; ++ i){
     bits[i] = [];
 
-    for (j = 0; j < 5; ++ j){
+    for (j = 0; j < 7; ++ j){
       square = {x: (j + 1) * width, y: (i + 1) * width, width: width, height: width};
       
       bits[i][j] = CV.countNonZero(imageSrc, square) > minZero? 1: 0;
